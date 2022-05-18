@@ -1,0 +1,76 @@
+/*
+============
+Cards
+============
+*/
+
+.title {
+  text-align: center;
+}
+
+.cards {
+  padding: 4rem 0;
+  background: var(--secondaryColor);
+}
+
+.cards_center {
+  width: 80vw;
+  max-width: 95%;
+  margin: 2rem auto;
+}
+
+.card {
+  border: 1px solid transparent;
+  margin-bottom: 3rem;
+  border-radius: 1.2rem;
+  color: white;
+  background: var(--mainBlack);
+}
+
+.card img{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card_info {
+  padding: 1rem;
+}
+
+.card_footer {
+  background: black;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card_footer span {
+  color: var(--primaryColor);
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards_center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto 1fr auto;
+}
+
+.card img {
+  height: 100%;
+}
+
+//.cards_center {
+//  display: grid;
+//  grid-column-gap: 2rem;
+//  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+//}
