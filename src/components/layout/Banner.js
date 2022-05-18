@@ -12,11 +12,6 @@ const Banner = () => {
     const handleLinkedin = () => {
         window.open("https://linkedin.com/in/tyrell-friend-308a43108");
     }
-
-    const handleGithub = () => {
-        window.open("https://www.github.com");
-    }
-
     return (
         <Fragment>
             <div className={classes.banner_container}>
@@ -24,18 +19,18 @@ const Banner = () => {
                     <img src={image1} alt=""/>
                 </div>
                 <div className={classes.banner_item}>
-                    <h1 className={classes.banner_introduction}>Hello, my name is Tyrell Friend.</h1>
-                    <h2>Skills</h2>
-                    <p>
+                    <p className={classes.banner_introduction}>Hello, my name is Tyrell Friend. <br/></p>
+                    <p className={classes.banner_skills}>I'm a Junior Software Engineer</p>
+                    <h2>Skills Set</h2>
+                    <p className={classes.banner_skills}>
                         Work Experience: Java, JavaFx, Docker, Jenkins,
                         Groovy, Angular, HTML/CSS, Python, and MySQL.
                     </p>
-                    <p>
+                    <p className={classes.banner_skills}>
                         Course Work: Android, C++, React, and Java.
                     </p>
-                    <p> Contact and Projects Below</p>
+                    <p className={classes.banner_skills}>Linkedin Below</p>
                     <span><FontAwesomeIcon icon="fa-brands fa-linkedin" onClick={handleLinkedin}/></span>
-                    <span><FontAwesomeIcon icon="fa-brands fa-github" onClick={handleGithub}/></span>
                 </div>
             </div>
             <div className={classes.icons_container}>

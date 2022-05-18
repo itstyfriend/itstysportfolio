@@ -51,9 +51,6 @@ const Header = () => {
                                 <a href="#" onClick={handleClose}>Home</a>
                             </li>
                             <li>
-                                <a href="#Education" onClick={handleClose}>Education</a>
-                            </li>
-                            <li>
                                 <a href="#Work" onClick={handleClose}>Work Experience</a>
                             </li>
                             <li>
